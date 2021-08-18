@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book and Appointment</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body bgcolor="">
+<h2><marquee>Hospital Booking System</marquee></h2>
+    <div class="nav">
+        <nav>
+            <label class="logo">Hospital</label>
+            <ul>
+                <li><a href="#">register</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="tut">
+        <h3>How to book an Appointment</h3>
+        <ol>
+            <li>Ensure you are registered if not register.</li>
+            <li>View the book application form.</li>
+            <li>Enter your ID.</li>
+            <li>Enter your name.</li>
+            <li>Fill the date of the appointment.</li>
+        </ol>
+    </div>
+    <div class="cred">
+        <form method="POST" action="senddata.php">
+            <label for="ID">Enter you ID</label>
+            <input type="text" name="id" id="id" required>
+            <label for="username">Enter Name</label>
+            <input type="text" name="username" id="username" required>
+            <label for="form">form No.</label>
+            <input type="text" name="form" id="form" required> <br> <br>
+            <button input type="submit"> Submit</button>
+        </form>
+		
+		
+    </div>
+    <div class="fill">
+        <form method="POST" action="quiz.php">
+            <h3>Questionare</h3> <br>
+            <label for="feelings">Briefly explain how you feel:</label> <br> <br>
+            <input type="text" name="feelings"id="feelings" required> <br> <br>
+            <label for="symptoms">Explain the symptoms:</label> <br> <br>
+            <input type="text" name="symptoms" id="symptoms" required> <br> <br>
+            <label for="period">How long have you been experiencing these symptoms?</label> <br> <br>
+            <input type="text" name="period" id="period" required> <br> <br>
+            <label for="drugs">Have you been using any form of drugs?</label> <br> <br>
+			<button input type='submit'>Submit</button>
+        </form>
+    </div>
+<!--    <div class="radio">
+        <label for="choice">YES</label>
+        <input type="radio" name="choice" value="choice-1">
+        <label for="choice">NO</label>
+        <input type="radio" name="choice" value="choice-2"> <br> <br>
+        <label for="drugused">If YES name the drug you have been using:</label> <br> <br>
+        <input type="text" id="drugused">
+        <button type="submit">submit</button>
+    </div>     -->
+</body>
+</html>
